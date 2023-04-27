@@ -5,9 +5,6 @@ from flask import request, render_template
 @app.route('/<name>', methods=['GET'])
 def index(name):
 
-    context = {
-        'name': name,
-        'title': 'Home'
-    }
+    context = ['Hello', 'World', 'From', 'Flask', 'App']
 
-    return render_template('home.html', context=context)
+    return render_template('home.html', context=context, title='index')
