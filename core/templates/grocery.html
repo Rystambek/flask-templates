@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+        {% if title %}
+            <title>{{ title }}</title>
+        {% else %}
+            <title>home</title>
+        {% endif %}
+
+    </head>
+    <body>
+
+        <ul>
+            {% for item in context %}
+                <li>{{ item.name }} - {{ item.price }}</li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
