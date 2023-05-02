@@ -4,7 +4,7 @@ from .db import get_db,get_type,get_name,get_price
 
 @app.route('/',methods=['GET'])
 def home():
-    return render_template('grocery.html', title='home')
+    return render_template('home.html', title='home')
 
 @app.route('/grocery', methods=['GET'])
 def grocery():
