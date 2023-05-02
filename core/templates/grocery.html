@@ -10,11 +10,11 @@
     </head>
     <body>
         <a href="https://deployuud.pythonanywhere.com/grocery">All</a><br>
-        <a href="https://deployuud.pythonanywhere.com/grocery/type//fruit">fruit</a><br>
-        <a href="https://deployuud.pythonanywhere.com/grocery/type//dairy">dairy</a><br>
-        <a href="https://deployuud.pythonanywhere.com/grocery/type//vegetable">vegetable</a><br>
-        <a href="https://deployuud.pythonanywhere.com/grocery/type//bakery">bakery</a><br>
-        <a href="https://deployuud.pythonanywhere.com/grocery/type//meat">meat</a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/fruit">fruit</a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/dairy">dairy</a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/vegetable">vegetable</a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/bakery">bakery</a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/meat">meat</a><br>
         <ul>
             {% for item in context %}
                 <li>{{ item.name }} - {{ item.price }}$</li>
