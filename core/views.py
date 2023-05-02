@@ -2,6 +2,9 @@ from core import app
 from flask import request, render_template
 from .db import get_db,get_type,get_name,get_price
 
+@app.route('/',methods=['GET'])
+def home():
+    return 'Jumaqulov Rustambek'
 
 @app.route('/grocery', methods=['GET'])
 def grocery():
